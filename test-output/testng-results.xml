@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-27T21:00:10 EEST" name="Default suite" finished-at="2024-07-27T21:00:39 EEST" duration-ms="28802">
+    <groups>
+    </groups>
+    <test started-at="2024-07-27T21:00:10 EEST" name="Default test" finished-at="2024-07-27T21:00:39 EEST" duration-ms="28802">
+      <class name="ScenariosCases.testCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ScenariosCases.testCases@1f010bf0]" started-at="2024-07-27T21:00:10 EEST" name="setUp" finished-at="2024-07-27T21:00:14 EEST" duration-ms="4650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userLoginSuccess(java.lang.String,java.lang.String)[pri:0, instance:ScenariosCases.testCases@1f010bf0]" started-at="2024-07-27T21:00:15 EEST" name="userLoginSuccess" data-provider="loginUser" finished-at="2024-07-27T21:00:20 EEST" duration-ms="4496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_user1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginSuccess -->
+        <test-method signature="userReachProfile()[pri:0, instance:ScenariosCases.testCases@1f010bf0]" started-at="2024-07-27T21:00:20 EEST" name="userReachProfile" finished-at="2024-07-27T21:00:25 EEST" depends-on-methods="ScenariosCases.testCases.userLoginSuccess" duration-ms="5569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userReachProfile -->
+        <test-method signature="addProfilesWithJsutRequiredField(java.lang.String,java.lang.String)[pri:0, instance:ScenariosCases.testCases@1f010bf0]" started-at="2024-07-27T21:00:25 EEST" name="addProfilesWithJsutRequiredField" data-provider="addUser" finished-at="2024-07-27T21:00:30 EEST" depends-on-methods="ScenariosCases.testCases.userReachProfile" duration-ms="4109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SayedFirst]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UserSecond]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProfilesWithJsutRequiredField -->
+        <test-method signature="searchOnSpecialUser()[pri:0, instance:ScenariosCases.testCases@1f010bf0]" started-at="2024-07-27T21:00:30 EEST" name="searchOnSpecialUser" finished-at="2024-07-27T21:00:33 EEST" depends-on-methods="ScenariosCases.testCases.addProfilesWithJsutRequiredField" duration-ms="2965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOnSpecialUser -->
+        <test-method signature="userReachAddProfiles()[pri:0, instance:ScenariosCases.testCases@1f010bf0]" started-at="2024-07-27T21:00:33 EEST" name="userReachAddProfiles" finished-at="2024-07-27T21:00:35 EEST" depends-on-methods="ScenariosCases.testCases.userReachProfile" duration-ms="2499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userReachAddProfiles -->
+        <test-method signature="addUserWithoutData()[pri:0, instance:ScenariosCases.testCases@1f010bf0]" started-at="2024-07-27T21:00:35 EEST" name="addUserWithoutData" finished-at="2024-07-27T21:00:38 EEST" depends-on-methods="ScenariosCases.testCases.userReachAddProfiles" duration-ms="3055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserWithoutData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ScenariosCases.testCases@1f010bf0]" started-at="2024-07-27T21:00:38 EEST" name="tearDown" finished-at="2024-07-27T21:00:39 EEST" duration-ms="444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ScenariosCases.testCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
